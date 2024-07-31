@@ -8,7 +8,7 @@ using SymboticQueueReader;
 
 var factory = new ConnectionFactory() 
     {
-        HostName = "192.168.0.90", // Just the host IP or name
+        HostName = "192.168.0.115",// Just the host IP or name
         Port = 5672, // Default port for RabbitMQ; adjust if different
         UserName = "symbotic", // Username for authentication
         Password = "setup1234", // Password for authentication

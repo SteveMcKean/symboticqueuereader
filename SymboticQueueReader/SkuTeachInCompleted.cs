@@ -10,7 +10,7 @@ namespace SymboticQueueReader;
 public class SkuTeachInCompleted
 {
     [JsonConstructor]
-    public SkuTeachInCompleted(Guid requestId, string sku, SkuTeachInCompletedResultEnum result, string message)
+    public SkuTeachInCompleted(Guid requestId, string? sku, SkuTeachInCompletedResultEnum result, string? message)
     {
         RequestId = requestId;
         Sku = sku;
@@ -24,13 +24,13 @@ public class SkuTeachInCompleted
     public Guid RequestId { get; set; }
 
     [DataMember]
-    public string Sku { get; set; }
+    public string? Sku { get; set; }
 
     [DataMember]
     public SkuTeachInCompletedResultEnum Result { get; set; }
 
     [DataMember]
-    public string Message { get; set; }
+    public string? Message { get; set; }
 }
 
 [JsonConverter(typeof(StringEnumConverter))]
