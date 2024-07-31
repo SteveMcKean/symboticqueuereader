@@ -8,66 +8,66 @@ using Newtonsoft.Json;
 
 public class Item
 {
-    [JsonProperty(nameof(RequestId))]
+    [JsonProperty(propertyName: nameof(RequestId))]
     public Guid RequestId { get; set; }
 
-    [JsonProperty(nameof(SkuId))]
+    [JsonProperty(propertyName: nameof(SkuId))]
     public Guid SkuId { get; set; }
 
-    [JsonProperty("Sku")]
+    [JsonProperty(propertyName: "Sku")]
     public string? Sku { get; set; }
 
-    [JsonProperty("Description")]
+    [JsonProperty(propertyName: nameof(Description))]
     public string Description { get; set; }
 
-    [JsonProperty("IsPressurized")]
+    [JsonProperty(propertyName: nameof(IsPressurized))]
     public bool IsPressurized { get; set; }
 
-    [JsonProperty(nameof(IsEligible))]
+    [JsonProperty(propertyName: nameof(IsEligible))]
     public bool IsEligible { get; set; }
 
-    [JsonProperty("IsFridgePack")]
+    [JsonProperty(propertyName: "IsFridgePack")]
     public bool IsFridgePack { get; set; }
 
-    [JsonProperty("LayersPerPallet")]
+    [JsonProperty(propertyName: "LayersPerPallet")]
     public int LayersPerPallet { get; set; }
 
-    [JsonProperty("CasesPerLayer")]
+    [JsonProperty(propertyName: "CasesPerLayer")]
     public int CasesPerLayer { get; set; }
 
-    [JsonProperty("AllergenTypeId")]
+    [JsonProperty(propertyName: "AllergenTypeId")]
     public string AllergenTypeId { get; set; }
 
-    [JsonProperty("PackagingTypeId")]
+    [JsonProperty(propertyName: "PackagingTypeId")]
     public int PackagingTypeId { get; set; }
 
-    [JsonProperty("PalletizationGroupTypeId")]
+    [JsonProperty(propertyName: "PalletizationGroupTypeId")]
     public int PalletizationGroupTypeId { get; set; }
 
-    [JsonProperty("IsFragile")]
+    [JsonProperty(propertyName: "IsFragile")]
     public bool IsFragile { get; set; }
 
-    [JsonProperty("SegregationCode")]
+    [JsonProperty(propertyName: "SegregationCode")]
     public int SegregationCode { get; set; }
 
-    [JsonProperty("ProductTypes")]
+    [JsonProperty(propertyName: "ProductTypes")]
     public string ProductTypes { get; set; }
 
-    [JsonProperty("GripForce")]
+    [JsonProperty(propertyName: "GripForce")]
     public double GripForce { get; set; }
 
-    [JsonProperty("IsAutoDepal")]
+    [JsonProperty(propertyName: "IsAutoDepal")]
     public bool IsAutoDepal { get; set; }
 
-    [JsonProperty("InboundDimensionalVariants")]
+    [JsonProperty(propertyName: "InboundDimensionalVariants")]
     public List<InboundDimensionalVariant> InboundDimensionalVariants { get; set; }
 
-    [JsonProperty("Extensions")]
+    [JsonProperty(propertyName: "Extensions")]
     public Dictionary<string, string> Extensions { get; set; }
 
-    [JsonProperty("IsBreakpackEligibleOverride")]
+    [JsonProperty(propertyName: "IsBreakpackEligibleOverride")]
     public bool? IsBreakpackEligibleOverride { get; set; }
 
-    [JsonProperty("WarehousePack")]
+    [JsonProperty(propertyName: "WarehousePack")]
     public WarehousePack WarehousePack { get; set; }
 }
