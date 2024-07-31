@@ -8,10 +8,10 @@ using Newtonsoft.Json;
 
 public class Item
 {
-    [JsonProperty("RequestId")]
+    [JsonProperty(nameof(RequestId))]
     public Guid RequestId { get; set; }
 
-    [JsonProperty("SkuId")]
+    [JsonProperty(nameof(SkuId))]
     public Guid SkuId { get; set; }
 
     [JsonProperty("Sku")]
@@ -23,7 +23,7 @@ public class Item
     [JsonProperty("IsPressurized")]
     public bool IsPressurized { get; set; }
 
-    [JsonProperty("IsEligible")]
+    [JsonProperty(nameof(IsEligible))]
     public bool IsEligible { get; set; }
 
     [JsonProperty("IsFridgePack")]
